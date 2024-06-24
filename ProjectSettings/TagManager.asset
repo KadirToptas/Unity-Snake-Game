@@ -3,7 +3,9 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Snake
+  - Wall
   layers:
   - Default
   - TransparentFX
@@ -40,6 +42,12 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Wall
+    uniqueID: 1354359385
+    locked: 0
+  - name: Score
+    uniqueID: 2743962987
     locked: 0
   - name: Snake
     uniqueID: 3988179159

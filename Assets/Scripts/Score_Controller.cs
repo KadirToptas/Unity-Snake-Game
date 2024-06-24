@@ -7,6 +7,7 @@ using Random = UnityEngine.Random;
 public class Score_Controller : MonoBehaviour
 {
     [SerializeField] private float minX, maxX, minY, maxY;
+    [SerializeField] private Snake_Controller snake;
     void Start()
     {
         RandomScorePosition();
@@ -24,6 +25,7 @@ public class Score_Controller : MonoBehaviour
         if (other.gameObject.CompareTag("Snake"))
         {
             RandomScorePosition();
+            snake.CreateSegment();
         }
     }
 }
